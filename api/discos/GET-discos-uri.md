@@ -87,12 +87,12 @@ curl -i
 HTTP/1.1 200 OK
 Location: https://test.rmap-hub.org/api/discos/rmap%3A1c59zw43jh
 Link: <http://purl.org/ontology/rmap#active>;rel="http://purl.org/ontology/rmap#hasStatus"
-Link: <https://test.rmap-hub.org/api/discos/rmap%3A8w9ghx3tv6>;rel="predecessor-version memento";datetime="Fri, 19 Jan 2018 23:45:58 UTC"
-Link: <https://test.rmap-hub.org/api/discos/rmap%3A1c59zw43jh>;rel="latest-version memento";datetime="Fri, 19 Jan 2018 23:46:10 UTC"
+Link: <https://test.rmap-hub.org/api/discos/rmap%3A8w9ghx3tv6>;rel="predecessor-version memento";datetime="Fri, 19 Jan 2018 23:45:58 GMT"
+Link: <https://test.rmap-hub.org/api/discos/rmap%3A1c59zw43jh>;rel="latest-version memento";datetime="Fri, 19 Jan 2018 23:46:10 GMT"
 Link: <https://test.rmap-hub.org/api/discos/rmap%3A1c59zw43jh/events>;rel="http://www.w3.org/ns/prov#has_provenance"
 Link: <https://test.rmap-hub.org/api/discos/rmap%3Ajdfn2z3k6r/latest>;rel="original timegate"
 Link: <https://test.rmap-hub.org/api/discos/rmap%3Ajdfn2z3k6r/timemap>;rel="timemap"
-Memento-Datetime: Fri, 19 Jan 2018 23:46:10 UTC
+Memento-Datetime: Fri, 19 Jan 2018 23:46:10 GMT
 Content-Type: application/vnd.rmap-project.disco+rdf+xml; version=1.0
 
 <?xml version="1.0" encoding="UTF-8"?>
