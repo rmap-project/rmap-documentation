@@ -94,19 +94,19 @@ key:secret
 ```
 disco.rdf file:
 ```
-@prefix dc: <[http://purl.org/dc/terms/](http://purl.org/dc/terms/)> .
-@prefix cito: <[http://purl.org/spar/cito/](http://purl.org/spar/cito/)> .
-@prefix ore: <[http://www.openarchives.org/ore/terms/](http://www.openarchives.org/ore/terms/)> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix cito: <http://purl.org/spar/cito/> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
 
-<> a <[http://purl.org/ontology/rmap#DiSCO](http://purl.org/ontology/rmap#DiSCO)> ;
-	<dc:creator> <[http://orcid.org/0000-0002-9354-8328](http://orcid.org/0000-0002-9354-8328)> ;
-	<ore:aggregates> <[https://doi.org/10.1109/InPar.2012.6339604](https://doi.org/10.1109/InPar.2012.6339604)> ;
-	<ore:aggregates> <[https://doi.org/10.5281/zenodo.10307](https://doi.org/10.5281/zenodo.10307)> .
-<[https://doi.org/10.1109/InPar.2012.6339604](https://doi.org/10.1109/InPar.2012.6339604)>
-	a <[http://purl.org/spar/fabio/JournalArticle](http://purl.org/spar/fabio/JournalArticle)> .
-<[https://doi.org/10.5281/zenodo.10307](https://doi.org/10.5281/zenodo.10307)>
-	a <[http://purl.org/dc/dcmitype/Software](http://purl.org/dc/dcmitype/Software)> ;
-	<cito:cites> <[https://doi.org/10.1109/InPar.2012.6339604](https://doi.org/10.1109/InPar.2012.6339604)> .
+<> a <http://purl.org/ontology/rmap#DiSCO> ;
+	<dc:creator> <http://orcid.org/0000-0002-9354-8328> ;
+	<ore:aggregates> <https://doi.org/10.1109/InPar.2012.6339604> ;
+	<ore:aggregates> <https://doi.org/10.5281/zenodo.10307> .
+<https://doi.org/10.1109/InPar.2012.6339604>
+	a <http://purl.org/spar/fabio/JournalArticle> .
+<https://doi.org/10.5281/zenodo.10307>
+	a <http://purl.org/dc/dcmitype/Software> ;
+	<cito:cites> <https://doi.org/10.1109/InPar.2012.6339604> .
 ```
 #### Response
 ```
