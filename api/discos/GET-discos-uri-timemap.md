@@ -43,11 +43,11 @@ Example:
 <https://test.rmap-hub.org/api/discos/rmap%3Armd18m7mr7/timemap>;rel="self";
     type="application/link-format",
 <https://test.rmap-hub.org/api/discos/rmap%3Armd18mddcw>;rel="memento latest-version";
-    datetime="Wed, 29 Jul 2015 17:47:18 UTC",
+    datetime="Wed, 29 Jul 2015 17:47:18 GMT",
 <https://test.rmap-hub.org/api/discos/rmap%3Armd18m7mr7>;rel="memento";
-    datetime="Fri, 24 Jul 2015 19:35:06 UTC",
+    datetime="Fri, 24 Jul 2015 19:35:06 GMT",
 <https://test.rmap-hub.org/api/discos/rmap%3Armd18mdd8b>;rel="memento";
-    datetime="Wed, 29 Jul 2015 17:40:24 UTC"
+    datetime="Wed, 29 Jul 2015 17:40:24 GMT"
 ```
 
 #### Possible Response Codes
@@ -87,9 +87,9 @@ Content-Type: application/link-format
 <https://test.rmap-hub.org/api/discos/rmap%3Armd18m7mr7/timemap>;rel="self";
     type="application/link-format",
 <https://test.rmap-hub.org/api/discos/rmap%3Armd18mddcw>;rel="memento latest-version";
-    datetime="Wed, 29 Jul 2015 17:47:18 UTC",
+    datetime="Wed, 29 Jul 2015 17:47:18 GMT",
 <https://test.rmap-hub.org/api/discos/rmap%3Armd18m7mr7>;rel="memento";
-    datetime="Fri, 24 Jul 2015 19:35:06 UTC",
+    datetime="Fri, 24 Jul 2015 19:35:06 GMT",
 <https://test.rmap-hub.org/api/discos/rmap%3Armd18mdd8b>;rel="memento";
-    datetime="Wed, 29 Jul 2015 17:40:24 UTC"
+    datetime="Wed, 29 Jul 2015 17:40:24 GMT"
 ```

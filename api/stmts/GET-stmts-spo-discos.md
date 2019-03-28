@@ -27,8 +27,8 @@ This path also supports the following querystring parameters:
 | Parameter| Description |
 |------|----|
 |status| Status of DiSCO or Agent that contains the Statement<br>- all<br>- active _(default)_<br>- inactive |
-| from | Date from. Applied to start date of the creation Event for the object that the Statement is contained in. Format as _yyyyMMddHHmmss_ or _yyyyMMdd_ <br>e.g. 20150101120000|
-|until | Date to. Applied to start date of the creation Event for the object that the Statement is contained in. Format as _yyyyMMddHHmmss_ or _yyyyMMdd_ <br>e.g. 20150101120000|
+| from | Date from (UTC). Applied to start date of the creation Event for the object that the Statement is contained in. Format as _yyyyMMddHHmmss_ or _yyyyMMdd_ <br>e.g. 20150101120000|
+|until | Date to (UTC). Applied to start date of the creation Event for the object that the Statement is contained in. Format as _yyyyMMddHHmmss_ or _yyyyMMdd_ <br>e.g. 20150101120000|
 |agents| Comma separated list of RMap Agent URIs. This will filter by the Agent that generated the graph the Statement is contained in.|
 | page | Page number as integer of greater than 0. Default is 1.|
 | limit | Number of URIs to retrieve. Default is 200. If there are more URIs than the limit, the system will automatically paginate and add `page=1` to your query string.

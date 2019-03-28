@@ -81,11 +81,11 @@ curl -i -I HEAD https://test.rmap-hub.org/api/discos/rmap%3Ap8cz8w9xbq
 HTTP/1.1 200 OK
 Location: https://test.rmap-hub.org/api/discos/rmap%3Ap8cz8w9xbq
 Link: <http://purl.org/ontology/rmap#active>;rel="http://purl.org/ontology/rmap#hasStatus"
-Link: <https://test.rmap-hub.org/api/discos/rmap%3Ap8cz8w9xbq>;rel="latest-version memento";datetime="Fri, 19 Jan 2018 23:31:31 UTC"
+Link: <https://test.rmap-hub.org/api/discos/rmap%3Ap8cz8w9xbq>;rel="latest-version memento";datetime="Fri, 19 Jan 2018 23:31:31 GMT"
 Link: <https://test.rmap-hub.org/api/discos/rmap%3Ap8cz8w9xbq/events>;rel="http://www.w3.org/ns/prov#has_provenance"
 Link: <https://test.rmap-hub.org/api/discos/rmap%3Ap8cz8w9xbq/latest>;rel="original timegate"
 Link: <https://test.rmap-hub.org/api/discos/rmap%3Ap8cz8w9xbq/timemap>;rel="timemap"
-Memento-Datetime: Fri, 19 Jan 2018 23:31:31 UTC
+Memento-Datetime: Fri, 19 Jan 2018 23:31:31 GMT
 
 [no content]
 ```

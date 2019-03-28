@@ -25,8 +25,8 @@ This path also supports the following querystring parameters:
 
 | Parameter| Description |
 |------|----|
-| from | Date from. Applied to Event start date. Format as _yyyyMMddHHmmss_ or _yyyyMMdd_ <br>e.g. 20150101120000|
-|until | Date to. Applied to Event start date. Format as _yyyyMMddHHmmss_ or _yyyyMMdd_ <br>e.g. 20150101120000|
+| from | Date from (UTC). Applied to Event start date. Format as _yyyyMMddHHmmss_ or _yyyyMMdd_ <br>e.g. 20150101120000|
+|until | Date to (UTC). Applied to Event start date. Format as _yyyyMMddHHmmss_ or _yyyyMMdd_ <br>e.g. 20150101120000|
 | page | Page number as integer of greater than 0. Default is 1.|
 | limit | Number of URIs to retrieve. Default is 200. If there are more URIs than the limit, the system will automatically paginate and add `page=1` to your query string.
 
