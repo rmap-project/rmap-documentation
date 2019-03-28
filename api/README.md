@@ -1,11 +1,21 @@
 
 # API Documentation
 
-_Note:  All documentation should be considered to be in-progress, working documents unless otherwise noted._
-
 The documents in this section describe how to use the RMap API. For a more in-depth description of the RMap data model, view the Data Model documentation.  You can also download a complete summary of all API calls available.
 
-## Live RMap instances
+* [Live RMap Instances](#live-rmap-instances)
+	* [Test](#test)
+	* [Live Beta](#live-beta)
+* [Read-only Access](#read-only-access)
+* [Write Access](#write-access)
+* [API Paths](#api-paths)
+	* [/discos](#discos)
+	* [/agents](#agents)
+	* [/events](#events)
+	* [/resources](#resources)
+	* [/stmts](#stmts)
+
+## Live RMap Instances
 
 There are two publicly available instances of the RMap software:
 
@@ -19,7 +29,7 @@ _[https://rmap-hub.org](https://rmap-hub.org)_
 
 A live beta version of RMap is hosted by the Sheridan Libraries at Johns Hopkins University. It is open for use The intention is to roll any data added to this instance into a full production instance. As a beta, however, there are backups, but no preservation process for this data. 
 
-## Read-only access
+## Read-Only Access
 Each of the API paths documented below can be appended to the root RMap API path. Live APIs can be found at the following URLs:
 
 Sandbox: https://test.rmap-hub.org/api
@@ -59,7 +69,7 @@ Here are some sample visualizations that support this simple conversion between 
 * https://test.rmap-hub.org/app/agents/rmap%3A0k6djhb7fp
 * https://test.rmap-hub.org/app/resources/https%3A%2F%2Fdoi.org%2F10.7265%2Fn5b56gn3
 
-## Write access
+## Write Access
 To create DiSCOs in RMap, you will need to generate an RMap Agent for yourself.  You can do this by logging into the RMap website using your Google, Twitter, or ORCID account.  Once you've logged in, you will need to follow the two steps on the Welcome page to generate working API keys.  Please note that all data pushed into RMap will be public. 
 
 To create API keys for the test site, log into the following website and follow the steps: [https://test.rmap-hub.org](https://test.rmap-hub.org). The process is identical for [https://rmap-hub.org](https://rmap-hub.org).
@@ -80,7 +90,7 @@ In this case:
 
 In addition to the individual examples found in the API documentation and media types, some example DiSCOs can be found in the [RMap test data](https://github.com/rmap-project/rmap/tree/master/testdata/src/main/resources/discos). Note that some of these are deliberately faulty for testing.  discoA.jsonld, .rdf, or .ttl, and discoBv1-4.rdf are working examples.
 
-## API paths
+## API Paths
 The documentation for the API paths is split according to the major sub-directories. Below is an overview of what each of these paths contain and links to the detailed documentation.
 
 ### /discos 
