@@ -86,6 +86,7 @@ Content-Type: application/vnd.rmap-project.event+rdf+xml; version=1.0
 	<startedAtTime xmlns="http://www.w3.org/ns/prov#" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-01-19T23:16:33.416Z</startedAtTime>
 	<endedAtTime xmlns="http://www.w3.org/ns/prov#" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-01-19T23:16:33.421Z</endedAtTime>
 	<generated xmlns="http://www.w3.org/ns/prov#" rdf:resource="rmap:dv41ns25h7"/>
+	<lineageProgenitor xmlns="http://purl.org/ontology/rmap#" rdf:resource="rmap:dv41ns25h7"/>
 </rdf:Description>
 
 </rdf:RDF>

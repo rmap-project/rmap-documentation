@@ -29,6 +29,7 @@ or
 
 ## Required Namespaces
 The first 3 namespaces in the following are used for the required fields of an RMap DiSCO, the other two are used for optional fields. 
+
 |Namespace |URI | Description |
 |-------------|------|--------|
 |rdf * |[http://www.w3.org/1999/02/22-rdf-syntax-ns#](http://www.w3.org/1999/02/22-rdf-syntax-ns) | Resource Description Framework. [RDF/XML](http://www.w3.org/TR/REC-rdf-syntax/). |
