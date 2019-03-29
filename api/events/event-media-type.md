@@ -190,7 +190,7 @@ Note: the elements whose occurrence is "0*" can have zero or more occurrences in
 <ark:/29297/aksjdflkajfdlldf> a <rmap:Event> ;
   rmap:eventTargetType <http://purl.org/ontology/rmap#DiSCO> ;
   rmap:eventType <http://purl.org/ontology/rmap#Derivation> ;
-  dcterms:description "A DiSCO was deleted" ;
+  dcterms:description "A DiSCO was derived" ;
   prov:wasAssociatedWith <ark:/29297/akdsfai23kdsd> ;
   prov:used <http://rmap-hub.org/keyid/sfjksjfdkjdf> ;
   prov:endedAtTime "2015-01-07T12:00:12" ;
