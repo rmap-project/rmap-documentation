@@ -58,6 +58,7 @@ Note: the elements whose occurrence is "0*" can have zero or more occurrences in
 | rmap:tombstonedObject | 0* | Points to URI of object tombstoned by this event | 
 | rmap:sourceObject | 0* | Points to URI of object that a new object was derived from (used in DiSCO derivation only) |
 | rmap:updatedObject | 0* | Points to URI of an object that has been altered via update (used in Agent update only) |
+| rmap:lineageProgenitor | 0 or 1 | References the first version of the DiSCO in the current lineage (use for DiSCOs only) |
 
 ## Example Events
 ### Create DiSCO Event 
@@ -88,6 +89,8 @@ Note: the elements whose occurrence is "0*" can have zero or more occurrences in
  
        <!--disco created-->
        <prov:generated rdf:resource="ark:/29297/akjdfalkjf2urjfad"/>
+       
+       <rmap:lineageProgenitor rdf:resource="ark:/29297/akjdfalkjf2urjfad"/>
  
     </rdf:Description>
 </rdf:RDF>
@@ -111,7 +114,8 @@ Note: the elements whose occurrence is "0*" can have zero or more occurrences in
   prov:startedAtTime "2015-01-07T12:00:01Z" ;
   prov:endedAtTime "2015-01-07T12:00:12" ;
   dc:description "A new DiSCO was created" ;
-  prov:generated <ark:/29297/akjdfalkjf2urjfad> 
+  prov:generated <ark:/29297/akjdfalkjf2urjfad> ;
+  rmap:lineageProgenitor <ark:/29297/akjdfalkjf2urjfad> .
 ```
 
 ### Update DiSCO Event
@@ -130,9 +134,11 @@ Note: the elements whose occurrence is "0*" can have zero or more occurrences in
   prov:endedAtTime "2015-01-07T12:00:12" ;
   dc:description "An updated version of a DiSCO was created" ;
  
-  rmap:inactivatedObject <ark:/29297/akjdfalkjf2urjfad> ;
+  rmap:inactivatedObject <ark:/29297/sdfjkwjekrjk> ;
   rmap:derivedObject <ark:/29297/akjdfalkjf2urjfad> ;
-  prov:generatedObject <ark:/29297/akjdfalkjf2urjfad> .
+  prov:generated <ark:/29297/akjdfalkjf2urjfad> .
+  
+  rmap:lineageProgenitor <ark:/29297/sdfjkwjekrjk> .
 ```
 ### Tombstone DiSCO Event
 #### text/turtle
@@ -153,6 +159,8 @@ Note: the elements whose occurrence is "0*" can have zero or more occurrences in
   prov:startedAtTime "2015-01-07T12:00:01Z" ;
  
   rmap:tombstonedObject <ark:/29297/akjdfalkjf2urjfad> .
+  
+  rmap:lineageProgenitor <ark:/29297/akjdfalkjf2urjfad> .
 ```
 ### Delete DiSCO Event
 #### text/turtle
@@ -175,6 +183,8 @@ Note: the elements whose occurrence is "0*" can have zero or more occurrences in
   prov:startedAtTime "2015-01-07T12:00:01Z" ;
  
   rmap:deletedObject <ark:/29297/akjdfalkjf2urjfad> .
+  
+  rmap:lineageProgenitor <ark:/29297/akjdfalkjf2urjfad> .
 ```
 ### Derive DiSCO Event
 #### text/turtle
@@ -190,7 +200,7 @@ Note: the elements whose occurrence is "0*" can have zero or more occurrences in
 <ark:/29297/aksjdflkajfdlldf> a <rmap:Event> ;
   rmap:eventTargetType <http://purl.org/ontology/rmap#DiSCO> ;
   rmap:eventType <http://purl.org/ontology/rmap#Derivation> ;
-  dcterms:description "A DiSCO was derived" ;
+  dcterms:description "An updated version of a DiSCO was created" ;
   prov:wasAssociatedWith <ark:/29297/akdsfai23kdsd> ;
   prov:used <http://rmap-hub.org/keyid/sfjksjfdkjdf> ;
   prov:endedAtTime "2015-01-07T12:00:12" ;
@@ -198,7 +208,9 @@ Note: the elements whose occurrence is "0*" can have zero or more occurrences in
  
   rmap:sourceObject <ark:/29297/akjdfalkjf2kjkjljkh> ;
   rmap:derivedObject <ark:/29297/akjdfalkjf2urjfad> ;
-  prov:generatedObject <ark:/29297/akjdfalkjf2urjfad> .
+  prov:generated <ark:/29297/akjdfalkjf2urjfad> .
+    
+  rmap:lineageProgenitor <ark:/29297/akjdfalkjf2urjfad> .
 ```
 
 ## RMap API Usage of this Media Type
