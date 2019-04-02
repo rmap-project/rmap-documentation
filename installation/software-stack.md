@@ -79,11 +79,13 @@ Allowing encoded slashes is vital for RMap to function, as with the Apache Serve
 org.apache.tomcat.util.buf.UDecoder.ALLOW_ENCODED_SLASH=true
 ```
  
-`rmap.configFile` allows you to override the default location for the properties file, which is embedded in the war file by default making it vulnerable to accidental overwrites. 
+Adding the `rmap.configFile` property to `catalina.properties` allows you to override the default values in the various properties files. By default these properties files are embedded in the deployed webapps (e.g. `tomcat/webapps/api/WEB-INF/classes`) and are therefore vulnerable to accidental overwrites. 
 ```
-rmap.configFile=file:///rmap/properties/rmap-dev.properties
+rmap.configFile=file:///rmap/properties/rmap.properties
 ```
-The spring.profiles.active property allows you to override some of the default RMap component configuration if needed. More about the Spring options and defaults are documented in [DEVELOPER.md in the RMap codebase](https://github.com/rmap-project/rmap/blob/master/DEVELOPER.md).
+An example annotated `rmap.properites` file can be found in the relevant [GitHub release](https://github.com/rmap-project/rmap/releases).
+
+The `spring.profiles.active property` allows you to override some of the default RMap component configuration if needed. More about the Spring options and defaults are documented in [DEVELOPER.md in the RMap codebase](https://github.com/rmap-project/rmap/blob/master/DEVELOPER.md).
 ```
 spring.profiles.active=default,persistent-db,ark-idservice,http-triplestore,http-solr,prod-kafka,auto-start-indexing
 ```
@@ -105,8 +107,8 @@ The REST API is public for readonly access. DiSCOs can be created by users who s
 The public RMap GUI supports 2 functions:
 1.  Search the RMap data using Solr and then navigate visually through the RDF data that was created via the API. The RMap Core component is used to interact with the RDF data. The visualizations are created using [vis.js](http://visjs.org/docs/network/).
 2.  It supports creation and management of users and keys via one of 2 paths - one or both can be enabled.
-	*  a user can sign themselves up by logging in using Twitter, Google, or ORCID. Once logged in they can configure their RMap Agent and generate API keys that can be used to create DiSCOs via the REST API.
-	 *  an administrator can use the /admin interface to log in and manage all users and their keys. This is an option if an implementer wants to disable oauth login and instead manage key access centrally. It is also useful for generating keys for specific purposes under an account that is not necessarily connected to an individual identity, for example you might make a key under a JHU account for a PASS loader. The admin tool also supports hard delete of DiSCOs. This is not available through the API. It was added here for special requests, for example, if someone has accidentally submits sensitive information to RMap and a soft delete through the API will not suffice.
+    *  a user can sign themselves up by logging in using Twitter, Google, or ORCID. Once logged in they can configure their RMap Agent and generate API keys that can be used to create DiSCOs via the REST API.
+    *  an administrator can use the /admin interface to log in and manage all users and their keys. This is an option if an implementer wants to disable oauth login and instead manage key access centrally. It is also useful for generating keys for specific purposes under an account that is not necessarily connected to an individual identity, for example you might make a key under a JHU account for a PASS loader. The admin tool also supports hard delete of DiSCOs. This is not available through the API. It was added here for special requests, for example, if someone has accidentally submits sensitive information to RMap and a soft delete through the API will not suffice.
 
 The RMap Auth component is used to interact with the user database for management of users and keys.
 

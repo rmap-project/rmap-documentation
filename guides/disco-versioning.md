@@ -292,3 +292,5 @@ rmap:disco04
 ```
 The behavior of this becomes a little complex if a third Agent derives a DiSCO from the second Agent's DiSCO. In that instance, the third Agent's DiSCO appears in the `allversions` list of the second Agent's, but it does not appear in the original Agent's list. So, while the `allversions` path will follow the lineage of a derived DiSCO, it will not leap to the DiSCO lineage of a third Agent!
 
+
+_As with all guides, we hope this information has been useful and welcome suggestions for improvements to the documentation. Please submit suggestions to rmap.project@gmail.com or add them to the [issues list](https://github.com/rmap-project/rmap-documentation/issues)._

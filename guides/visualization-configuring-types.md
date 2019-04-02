@@ -91,3 +91,6 @@ Once the two properties files have been configured as needed, take the following
 4. Do a Tomcat restart in order for the new properties to be picked up by the web application. 
 
 Your new categories should be visible.
+
+
+_As with all guides, we hope this information has been useful and welcome suggestions for improvements to the documentation. Please submit suggestions to rmap.project@gmail.com or add them to the [issues list](https://github.com/rmap-project/rmap-documentation/issues)._
