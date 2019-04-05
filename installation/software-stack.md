@@ -127,13 +127,15 @@ Within the core component, there is an indexer component that interacts with Kaf
 The core component does not deal with any auth code. It is assumed that anything interacting with the core component has already been authorized to make changes to the triplestore. The only thing it will do in this vein is prevent RMap Agents making changes to DiSCOs that they did not create.
 
 ### Solr Search API & index
-*Version(s) tested/running: Solr 6.6.2 is installed in production and used for integration tests.*
+*Version(s) tested/running: Solr 7.7 is installed in production and 6.6.2 is used for integration tests so either will work. Solr 8 is not compatible at this time.*
 
 *Default port(s): 8983*
 
 The Solr piece was added as part of the updates for 2.0.0-beta, it was not part of the initial 1.0.0-beta release. Other versions of Solr have not yet been tested.
 
 The Solr Search API supports the text search interface on the GUI. The RMap core component uses Kafka to ensure all changes to the data make it into the index so that they can are discoverable through the UI.
+
+To run this component, you need to copy the ['cores' directory hierarchy](https://github.com/rmap-project/rmap/tree/master/indexing-solr-resources/src/main/resources/cores) (including the cores directory itself) somewhere underneath the SOLR_HOME directory on your Solr instance. Solr will discover the core by the presence of the core.properties file. The startup log should indicate the discovered core, name discos. 
 
 ### Kafka & Zookeeper
 *Version(s) tested/running: Zookeeper 3.4.10 is being run along with Kafka 1.0.0*
