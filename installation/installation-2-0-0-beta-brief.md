@@ -10,7 +10,7 @@ Here is an outline of the steps you could take to complete an RMap 2.0.0-beta in
 
 1.  Install Java 8 and set that version as default for the user(s) that will be controlling Tomcat and other Java-based software.
 2.  Install and start up Apache Tomcat with Apache Server in front. Important: use the version and configuration options described in the Software Stack document for [Tomcat](software-stack.md#apache-tomcat) and [Apache Server](software-stack.md#apache-server).
-3.  Install and start up standard installs of Solr, GraphDB, Zookeeper, Kafka, and MySQL (on the same or separate machines). Kafka is only used to manage Solr indexing, so a cluster size of 1 will work for low activity implementations of RMap.
+3.  Install and start up standard installs of Solr, GraphDB, Zookeeper, Kafka, and MySQL (on the same or separate machines). Kafka is only used to manage Solr indexing, so a cluster size of 1 will work for low activity implementations of RMap. See the configuration information in the [Solr component description](https://github.com/rmap-project/rmap-documentation/blob/master/installation/software-stack.md#solr-search-api--index)
 4.  Create an empty GraphDB database to point to.
 5.  Run the [createTables.sql](https://github.com/rmap-project/rmap/releases/download/v2.0.0-beta/createTables.sql) on a new SQL database.
 6. Download the driver for the SQL database you selected, and make sure there is a copy of it the `/tomcat/libs` folder.
